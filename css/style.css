@@ -1,0 +1,31 @@
+body {
+    background-color: aquamarine;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.main {
+    align-content: center;
+    background-color: aquamarine;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-text,
+#encrypted-text {
+    width: 50%;
+    border-radius: 4px;
+}
