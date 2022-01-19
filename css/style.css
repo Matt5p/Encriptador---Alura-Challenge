@@ -42,7 +42,8 @@ footer {
 /* Botón Encriptar */
 
 #boton-encriptar,
-#boton-desencriptar {
+#boton-desencriptar,
+#boton-copiar {
     position: flex;
     width: 181px;
     height: 37px;
