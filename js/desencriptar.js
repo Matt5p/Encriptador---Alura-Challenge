@@ -1,21 +1,16 @@
 function desencriptar() {
     var texto = document.querySelector("#input-text").value;
-
-    var result = texto.replace(/enter/g, "e");
-    result = result.replace(/imes/g, "i");
-    result = result.replace(/ai/g, "a");
-    result = result.replace(/ober/g, "o");
-    result = result.replace(/ufat/g, "u");
-
-    console.log(result);
-
-    var encriptado = document.getElementById("encrypted-text");
-
-    encriptado.value = result;
+    texto = texto
+        .replace(/enter/gi, "e")
+        .replace(/imes/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u");
+    document.getElementById("encrypted-text").value = texto;
 }
 
 var boton = document.getElementById("boton-desencriptar");
-boton.onclick = function () {
-    console.log("TEST desencriptando");
+boton.onclick = function (texto) {
+    console.log("TEST desencriptando: " + texto);
     desencriptar();
 };

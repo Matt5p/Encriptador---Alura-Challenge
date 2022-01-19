@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Encriptador by Matt5p</title>
 </head>
 <body>
     <header>
-        <h1>Encriptador Fiero V0.1</h1>
+        <h1>Encriptador</h1>
     </header>    
     
     <main class="main">
         <div class="container"> 
             <form>
-                <div class="form-group">
+                <div class="text-box1">
                     <label for="input-text">Ingrese texto a encriptar</label>
                     <textarea name="input-text" id="input-text" cols="30" rows="10" class="form-control" style="resize: none" spellcheck="false"></textarea>
+                    <br>
+                    <input type="button" value="Encriptar" id="boton-encriptar" class="btn btn-primary btn-sm">      
+                    <br>      
+                    <input type="button" value="Desencriptar" id="boton-desencriptar" class="btn btn-primary btn-sm">            
                 </div>
-            </form>              
-            <br>
-            <input type="button" value="Encriptar" id="boton-encriptar" class="btn btn-primary btn-sm">            
-            <input type="button" value="Desencriptar" id="boton-desencriptar" class="btn btn-primary btn-sm">            
-            <br><br>            
-            <input type="button" value="Copiar" id="boton-copiar" class="btn btn-primary">
-            <br><br> 
-            <form action="">
-                <div class="form-group">
+            </form>                                              
+            <form>
+                <div class="text-box2">
                     <label for="input-text">Texto encriptado / desencriptado</label>
                     <textarea name="encrypted-text" id="encrypted-text" cols="30" rows="10" class="form-control" style="resize: none" spellcheck="false"></textarea>
+                    <br>
+                    <input type="button" value="Copiar texto" id="boton-copiar" class="btn btn-primary btn-sm">
                 </div>
             </form>    
         </div>    
     </main>
 
-    <footer>
-        <p>Albornoz Matías</p>
-    </footer>
+    <!-- <div class="footer">
+        <footer>
+            <p>Albornoz Matías - 2022</p>
+        </footer>
+    </div> -->
     
+    <script src="./js/copiar.js"></script>
+    <script src="./js/encriptar.js"></script>
+    <script src="./js/desencriptar.js"></script>
 </body>
-
-
-<script src="./js/copiar.js"></script>
-<script src="./js/encriptar.js"></script>
-<script src="./js/desencriptar.js"></script>
-
 </html>

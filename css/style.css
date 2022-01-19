@@ -1,31 +1,51 @@
 body {
-    background-color: aquamarine;
+    background-color: #bacbdb;
 }
 
 h1 {
+    padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-
-footer {
-    background-color: aquamarine;
     text-align: center;
 }
 
-.main {
-    align-content: center;
-    background-color: aquamarine;
+footer {
+    text-align: center;
 }
 
 .container {
+    height: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.text-box1 {
+    width: 50%;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+.text-box2 {
+    width: 50%;
+    float: right;
+    display: grid;
+    place-items: center;
 }
 
 #input-text,
 #encrypted-text {
-    width: 50%;
+    width: 80%;
     border-radius: 4px;
+}
+
+/* Botón Encriptar */
+
+#boton-encriptar,
+#boton-desencriptar {
+    position: flex;
+    width: 181px;
+    height: 37px;
+    background: #21235b;
+    border-radius: 10px;
 }
