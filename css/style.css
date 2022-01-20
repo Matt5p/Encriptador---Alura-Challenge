@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
 body {
     background-color: #bacbdb;
 }
@@ -10,7 +12,14 @@ h1 {
 }
 
 footer {
+    padding-top: 20px;
     text-align: center;
+}
+
+.descripcion,
+label {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -39,8 +48,6 @@ footer {
     border-radius: 4px;
 }
 
-/* Botón Encriptar */
-
 #boton-encriptar,
 #boton-desencriptar,
 #boton-copiar {
@@ -49,4 +56,5 @@ footer {
     height: 37px;
     background: #21235b;
     border-radius: 10px;
+    font-family: "Roboto", sans-serif;
 }

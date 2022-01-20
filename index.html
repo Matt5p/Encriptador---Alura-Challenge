@@ -15,16 +15,19 @@
     </header>    
     
     <main class="main">
-        <div class="container"> 
+        <div class="container">
+            <div class="descripcion">
+                <p>Ingrese un texto a encriptar o desencriptar usando solo letras minusculas y sin tildes.</p>
+            </div> 
             <form>
                 <div class="text-box1">
-                    <label for="input-text">Ingrese texto a encriptar</label>
+                    <label for="input-text">Ingrese el texto aquí</label>
                     <textarea name="input-text" id="input-text" cols="30" rows="10" class="form-control" style="resize: none" spellcheck="false"></textarea>
                     <br>
                     <input type="button" value="Encriptar" id="boton-encriptar" class="btn btn-primary btn-sm">      
                     <br>      
                     <input type="button" value="Desencriptar" id="boton-desencriptar" class="btn btn-primary btn-sm">            
-                </div>
+                </div>                
             </form>                                              
             <form>
                 <div class="text-box2">
@@ -32,16 +35,17 @@
                     <textarea name="encrypted-text" id="encrypted-text" cols="30" rows="10" class="form-control" style="resize: none" spellcheck="false"></textarea>
                     <br>
                     <input type="button" value="Copiar texto" id="boton-copiar" class="btn btn-primary btn-sm">
-                </div>
-            </form>    
+                </div>                    
+            </form>
+            
         </div>    
     </main>
 
-    <!-- <div class="footer">
+    <div class="footer">
         <footer>
             <p>Albornoz Matías - 2022</p>
         </footer>
-    </div> -->
+    </div>
     
     <script src="./js/copiar.js"></script>
     <script src="./js/encriptar.js"></script>
