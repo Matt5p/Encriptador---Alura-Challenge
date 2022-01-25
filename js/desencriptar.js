@@ -11,6 +11,5 @@ function desencriptar() {
 
 var boton = document.getElementById("boton-desencriptar");
 boton.onclick = function (texto) {
-    console.log("TEST desencriptando: " + texto);
     desencriptar();
 };

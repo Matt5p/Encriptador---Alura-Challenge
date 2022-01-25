@@ -11,7 +11,6 @@ function encriptar() {
 
 var boton = document.getElementById("boton-encriptar");
 boton.onclick = function (texto) {
-    console.log("TEST encriptando: " + texto);
     encriptar();
 };
 
