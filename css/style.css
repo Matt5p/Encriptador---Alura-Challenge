@@ -58,3 +58,22 @@ label {
     border-radius: 10px;
     font-family: "Roboto", sans-serif;
 }
+
+
+/* CSS para movil */
+
+/* @media screen and (max-width:480px) */
+
+@media screen and (max-width: 480px){
+    .text-box1, .text-box2{
+        width: 100%;
+    }
+
+    .text-box1 > label, .text-box2 > label{
+        margin: 1em;
+    }
+
+    #boton-desencriptar, #boton-copiar{
+        margin-bottom: 1em;
+    }
+}
