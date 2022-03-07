@@ -10,6 +10,10 @@ function desencriptar() {
 }
 
 var boton = document.getElementById("boton-desencriptar");
-boton.onclick = function (texto) {
-    desencriptar();
+boton.onclick = function () {
+    if(document.getElementById("input-text").value.match(/^[a-z ]*$/)) {
+        desencriptar();
+    } else {
+        alert("Solo se permiten letras minusculas, sin caracteres especiales.")
+    }
 };
