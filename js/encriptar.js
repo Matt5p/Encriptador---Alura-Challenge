@@ -10,8 +10,12 @@ function encriptar() {
 }
 
 var boton = document.getElementById("boton-encriptar");
-boton.onclick = function (texto) {
-    encriptar();
+boton.onclick = function () {    
+    if(document.getElementById("input-text").value.match(/^[a-z ]*$/)) {
+        encriptar();
+    } else {
+        alert("Solo se permiten letras minusculas, sin caracteres especiales.")
+    }
 };
 
 // La letra "e" es convertida para "enter"
